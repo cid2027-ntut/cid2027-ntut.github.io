@@ -16,21 +16,23 @@ const header = `
       <span>第 32 屆國際設計學術研討會<small>2027 CID INTERNATIONAL DESIGN SYMPOSIUM</small></span>
     </a>
     <nav class="main-nav" id="main-nav" aria-label="主選單">${navItems}</nav>
-    <div class="header-tools">
-      <button class="lang-btn" id="lang-toggle" type="button" aria-label="切換語言">繁中 / EN</button>
-      <a class="cta-small" href="#" data-notice="投稿與註冊系統預計於 2027 年 2 月 15 日開放。">2.15 開放</a>
-      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">選單</button>
-    </div>
-  </div></header>`;
-const footer = `
-  <footer class="site-footer"><div class="shell">
-    <div class="footer-top"><div class="footer-brand">
-      <div class="wordmark"><span class="mark-placeholder" aria-hidden="true">LOGO</span><span>共生迭代．典範移轉<small>2027 CID 32ND INTERNATIONAL DESIGN SYMPOSIUM</small></span></div>
-      <p>2027 中華民國設計學會第 32 屆國際設計學術研討會暨設計工作坊</p>
-      <div class="logos-placeholder" aria-label="主辦與指導單位標誌佔位">
-        <span class="logo-chip">指導單位標誌佔位</span><span class="logo-chip">主辦單位標誌佔位</span><span class="logo-chip">承辦單位標誌佔位</span>
-      </div>
-    </div><nav class="footer-links" aria-label="頁尾導覽">
+	    <div class="header-tools">
+	      <button class="lang-btn" id="lang-toggle" type="button" aria-label="切換語言">繁中 / EN</button>
+	      <a class="cta-small" href="#" data-notice="投稿與註冊系統預計於 2027 年 2 月 15 日開放。">2.15 開放</a>
+	      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">選單</button>
+	    </div>
+	  </div></header>`;
+	const footer = `
+	  <footer class="site-footer"><div class="shell">
+	    <div class="footer-top"><div class="footer-brand">
+	      <div class="wordmark"><span class="mark-placeholder" aria-hidden="true">LOGO</span><span>共生迭代．典範移轉<small>2027 CID 32ND INTERNATIONAL DESIGN SYMPOSIUM</small></span></div>
+	      <p>2027 中華民國設計學會第 32 屆國際設計學術研討會暨設計工作坊</p>
+	      <div class="footer-units" aria-label="主辦、承辦與指導單位">
+	        <div class="footer-unit"><span>主辦單位</span><strong>中華民國設計學會</strong><small>Chinese Institute of Design</small></div>
+	        <div class="footer-unit"><span>承辦單位</span><strong>國立臺北科技大學設計學院</strong><small>College of Design, Taipei Tech</small></div>
+	        <div class="footer-unit"><span>指導單位</span><strong>國家科學及技術委員會</strong><small>National Science and Technology Council</small></div>
+	      </div>
+	    </div><nav class="footer-links" aria-label="頁尾導覽">
       <a href="call-for-papers.html">徵稿資訊</a><a href="program.html">大會議程</a><a href="venue.html">無障礙資訊</a><a href="registration.html">聯絡與報名</a><a href="#" data-notice="歷屆研討會連結待提供。">歷屆研討會</a><a href="#" data-notice="純文字導覽指引將於正式版補上。">純文字導覽指引</a>
     </nav></div>
     <div class="footer-bottom"><span>© 2027 CID 32nd International Design Symposium</span><span>此為網站原型｜識別、圖片、聯絡方式與外部連結待確認</span></div>

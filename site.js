@@ -16,24 +16,24 @@ const header = `
       <span>第 32 屆國際設計學術研討會<small>2027 CID INTERNATIONAL DESIGN SYMPOSIUM</small></span>
     </a>
     <nav class="main-nav" id="main-nav" aria-label="主選單">${navItems}</nav>
-	    <div class="header-tools">
-	      <button class="lang-btn" id="lang-toggle" type="button" aria-label="切換語言">繁中 / EN</button>
-	      <a class="cta-small" href="#" data-notice="投稿與註冊系統預計於 2027 年 2 月 15 日開放。">2.15 開放</a>
-	      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">選單</button>
-	    </div>
-	  </div></header>`;
-	const footer = `
-	  <footer class="site-footer"><div class="shell">
-	    <div class="footer-top"><div class="footer-brand">
-	      <div class="wordmark"><span class="mark-placeholder" aria-hidden="true">LOGO</span><span>共生迭代．典範移轉<small>2027 CID 32ND INTERNATIONAL DESIGN SYMPOSIUM</small></span></div>
-	      <p>2027 中華民國設計學會第 32 屆國際設計學術研討會暨設計工作坊</p>
-	      <div class="footer-units" aria-label="主辦、承辦與指導單位">
-	        <div class="footer-unit"><span>主辦單位</span><strong>中華民國設計學會</strong><small>Chinese Institute of Design</small></div>
-	        <div class="footer-unit"><span>承辦單位</span><strong>國立臺北科技大學設計學院</strong><small>College of Design, Taipei Tech</small></div>
-	        <div class="footer-unit"><span>指導單位</span><strong>國家科學及技術委員會</strong><small>National Science and Technology Council</small></div>
-	      </div>
-	    </div><nav class="footer-links" aria-label="頁尾導覽">
-      <a href="call-for-papers.html">徵稿資訊</a><a href="program.html">大會議程</a><a href="venue.html">無障礙資訊</a><a href="registration.html">聯絡與報名</a><a href="#" data-notice="歷屆研討會連結待提供。">歷屆研討會</a><a href="#" data-notice="純文字導覽指引將於正式版補上。">純文字導覽指引</a>
+    <div class="header-tools">
+      <button class="lang-btn" id="lang-toggle" type="button" aria-label="切換語言" aria-pressed="false">繁中 / EN</button>
+      <a class="cta-small" href="registration.html" data-zh="報名註冊" data-en="Registration">報名註冊</a>
+      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">選單</button>
+    </div>
+  </div></header>`;
+const footer = `
+  <footer class="site-footer"><div class="shell">
+    <div class="footer-top"><div class="footer-brand">
+      <div class="wordmark"><span class="mark-placeholder" aria-hidden="true">LOGO</span><span>共生迭代．典範移轉<small>2027 CID 32ND INTERNATIONAL DESIGN SYMPOSIUM</small></span></div>
+      <p>2027 中華民國設計學會第 32 屆國際設計學術研討會暨設計工作坊</p>
+      <div class="footer-units" aria-label="主辦、協辦與指導單位">
+        <div class="footer-unit"><span data-zh="主辦單位" data-en="Organized by">主辦單位</span><strong data-zh="中華民國設計學會" data-en="Chinese Institute of Design">中華民國設計學會</strong><small>Chinese Institute of Design</small></div>
+        <div class="footer-unit"><span data-zh="協辦單位" data-en="Co-organized by">協辦單位</span><strong data-zh="臺北科技大學設計學院" data-en="College of Design, Taipei Tech">臺北科技大學設計學院</strong><small>College of Design, Taipei Tech</small></div>
+        <div class="footer-unit"><span data-zh="指導單位" data-en="Supervised by">指導單位</span><strong data-zh="國家科學及技術委員會" data-en="National Science and Technology Council">國家科學及技術委員會</strong><small>National Science and Technology Council</small></div>
+      </div>
+    </div><nav class="footer-links" aria-label="頁尾導覽">
+      <a href="call-for-papers.html" data-zh="徵稿資訊" data-en="Call for Papers">徵稿資訊</a><a href="program.html" data-zh="大會議程" data-en="Program">大會議程</a><a href="venue.html" data-zh="無障礙資訊" data-en="Accessibility">無障礙資訊</a><a href="registration.html" data-zh="聯絡與報名" data-en="Contact & Registration">聯絡與報名</a><a href="#" data-notice="歷屆研討會連結待提供。" data-zh="歷屆研討會" data-en="Past Symposia">歷屆研討會</a><a href="#" data-notice="純文字導覽指引將於正式版補上。" data-zh="純文字導覽指引" data-en="Text Navigation Guide">純文字導覽指引</a>
     </nav></div>
     <div class="footer-bottom"><span>© 2027 CID 32nd International Design Symposium</span><span>此為網站原型｜識別、圖片、聯絡方式與外部連結待確認</span></div>
   </div></footer>`;
@@ -71,5 +71,5 @@ document.querySelector("#lang-toggle").addEventListener("click", (event) => {
   document.querySelectorAll("[data-zh][data-en]").forEach((el) => {
     el.textContent = active ? el.dataset.en : el.dataset.zh;
   });
-  showToast(active ? "English navigation preview; full English copy is pending." : "已切換為繁體中文導覽。英文全文待確認。");
+  showToast(active ? "English preview; some prototype labels may remain in Chinese." : "已切換為繁體中文預覽。英文資料依新內容整理。");
 });

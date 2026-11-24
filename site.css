@@ -131,3 +131,18 @@ body[data-page="about"] .copy-grid{gap:clamp(25px,6vw,90px)}
 .footer-unit:first-child{padding-left:0}
 @media(max-width:820px){body[data-page="about"] .copy-grid{grid-template-columns:1fr}.footer-top{align-items:stretch}}
 @media(max-width:560px){.footer-unit+.footer-unit{border-left:0;border-top:1px solid rgba(213,204,233,.35);padding:12px 0 9px}}
+
+/* Content update: compact milestone band, readable schedule tables, and fee list. */
+body[data-page="home"] .date-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+body[data-page="program"] .table-wrap table{min-width:540px}
+.fee-list{display:grid;gap:12px;width:100%;text-align:left}
+.fee-list>div{display:flex;align-items:baseline;justify-content:space-between;gap:14px;border-bottom:1px solid rgba(32,43,104,.2);padding:0 0 9px}
+.fee-list>div:last-child{border:0;padding-bottom:0}
+.fee-list span{font-size:14px;color:#353f75}
+.fee-list strong{font:700 20px var(--mono);white-space:nowrap;color:var(--ink)}
+body[data-page="registration"] .fee-placeholder{display:block;min-height:0}
+body[data-page="registration"] .registration-card+.schedule-note{max-width:850px;margin:18px auto 0}
+body[data-page="venue"] .copy-grid{grid-template-columns:1fr 1fr}
+@media(max-width:820px){body[data-page="venue"] .copy-grid{grid-template-columns:1fr}}
+@media(max-width:560px){body[data-page="home"] .date-row{grid-template-columns:repeat(2,minmax(0,1fr))}.fee-list strong{font-size:18px}}

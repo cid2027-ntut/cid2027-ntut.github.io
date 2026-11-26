@@ -43,7 +43,7 @@ const homeFooter = `
   <footer class="site-footer home-site-footer"><div class="shell">
     <div class="home-footer-units" aria-label="大會相關單位">
       <div class="home-footer-unit"><small class="home-footer-label" data-zh="主辦單位" data-en="Organizer">主辦單位</small><div class="home-footer-body home-footer-organizer"><img class="home-footer-org-logo" src="assets/cid-logo.png" alt="中華民國設計學會 Chinese Institute of Design"></div></div>
-      <div class="home-footer-unit"><small class="home-footer-label" data-zh="協辦單位" data-en="Co-organized by">協辦單位</small><div class="home-footer-body home-footer-body-co"><img class="home-footer-ntut-logo" src="assets/ntut-logo.png" alt="國立臺北科技大學 National Taipei University of Technology"><span class="home-footer-unit-divider" aria-hidden="true"></span><span class="home-footer-mark" role="img" aria-label="設計學院 Logo 圖片待補">學院 Logo<br>圖片待補</span></div></div>
+      <div class="home-footer-unit"><small class="home-footer-label" data-zh="協辦單位" data-en="Co-organized by">協辦單位</small><div class="home-footer-body home-footer-body-co"><img class="home-footer-ntut-logo" src="assets/ntut-logo.png" alt="國立臺北科技大學 National Taipei University of Technology"><span class="home-footer-unit-divider" aria-hidden="true"></span><img class="home-footer-college-logo" src="assets/ntut-college-logo.png" alt="國立臺北科技大學設計學院 National Taipei University of Technology College of Design"></div></div>
       <div class="home-footer-unit"><small class="home-footer-label" data-zh="指導單位" data-en="Supervised by">指導單位</small><div class="home-footer-body"><img class="home-footer-nstc-logo" src="assets/nstc-logo.png" alt="國家科學及技術委員會 National Science and Technology Council"></div></div>
     </div>
     <div class="home-footer-meta">

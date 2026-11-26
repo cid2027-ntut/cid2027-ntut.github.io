@@ -468,6 +468,7 @@ body[data-page="home"] .home-footer-unit strong{display:none}
 body[data-page="home"] .home-footer-body-co .home-footer-mark{font-size:16px;font-weight:400;color:#393939}
 body[data-page="home"] .home-footer-unit .home-footer-mark{font-size:16px;font-weight:400;color:#393939}
 body[data-page="home"] .home-footer-ntut-logo{display:block;width:min(220px,100%);height:auto;max-width:100%;flex:0 1 220px;object-fit:contain}
+body[data-page="home"] .home-footer-nstc-logo{display:block;width:min(230px,100%);height:auto;max-width:100%;flex:0 1 230px;object-fit:contain}
 body[data-page="home"] .cmt-acknowledgment{font-size:10px;color:#A69BCF}
 @media(max-width:620px){
   body[data-page="home"] .home-reading-width{width:calc(100% - 36px)}
@@ -476,6 +477,7 @@ body[data-page="home"] .cmt-acknowledgment{font-size:10px;color:#A69BCF}
   body[data-page="home"] .home-track-label{font-size:18px}
   body[data-page="home"] .home-track-list a{grid-template-columns:105px minmax(0,1fr)}
   body[data-page="home"] .home-footer-ntut-logo{width:min(200px,100%);flex-basis:200px}
+  body[data-page="home"] .home-footer-nstc-logo{width:min(200px,100%);flex-basis:200px}
 }
 
 
